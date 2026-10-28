@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Moonrise Coffee Co.</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <div class="logo">
+      <span class="logo-the">The</span>
+      <span class="logo-moonrise">Moonrise</span>
+      <span class="logo-co">Coffee Co.</span>
+    </div>
+    <a href="#waitlist" class="nav-cta">Join the Waitlist</a>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <video autoplay muted loop playsinline>
+      <source src="../assets/moonrise-espresso-pour.mp4" type="video/mp4">
+    </video>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <div class="logo">
+        <span class="logo-the">The</span>
+        <span class="logo-moonrise">Moonrise</span>
+        <span class="logo-co">Coffee Co.</span>
+      </div>
+      <p class="hero-tagline">One bag. Chosen for you. Every month.</p>
+      <a href="#waitlist" class="btn-primary">Join the Waitlist</a>
+    </div>
+  </section>
+
+  <!-- INTRO -->
+  <section class="intro">
+    <div class="intro-inner">
+      <span class="section-label">The Idea</span>
+      <h2>Great coffee shouldn't require research.</h2>
+      <p>
+        We find the coffees worth drinking — tracking down the farms, the people,
+        the harvests that produce something genuinely extraordinary. Then we send
+        one to you, with everything you need to know to appreciate it.
+        You just make it.
+      </p>
+    </div>
+  </section>
+
+  <!-- COFFEES -->
+  <section class="coffees">
+    <div class="coffees-inner">
+      <div class="coffees-header">
+        <span class="section-label">Past Selections</span>
+        <h2>Each bag tells a story.</h2>
+      </div>
+      <div class="coffees-grid">
+        <div class="coffee-card">
+          <div class="coffee-img-wrap">
+            <img src="../assets/moonrise-bag-yirgacheffe.jpg" alt="Yirgacheffe, Ethiopia">
+            <div class="coffee-hover-overlay">
+              <p class="coffee-hover-desc">Floral and clean, best as a slow pour-over while the day is still deciding what to be. Grown in the highlands of southern Ethiopia by smallholder farmers in the Gedeo zone.</p>
+            </div>
+          </div>
+          <span class="coffee-origin">Ethiopia · Light Roast</span>
+          <span class="coffee-name">Yirgacheffe</span>
+          <span class="coffee-notes">Jasmine · Bergamot · Stone fruit</span>
+        </div>
+        <div class="coffee-card">
+          <div class="coffee-img-wrap">
+            <img src="../assets/moonrise-bag-huila.jpg" alt="Huila, Colombia">
+            <div class="coffee-hover-overlay">
+              <p class="coffee-hover-desc">Balanced, sweet and forgiving — the one that tastes right no matter how you brew it. From the Huila department in southern Colombia, where altitude and rich volcanic soil produce exceptional harvests year after year.</p>
+            </div>
+          </div>
+          <span class="coffee-origin">Colombia · Medium Roast</span>
+          <span class="coffee-name">Huila</span>
+          <span class="coffee-notes">Caramel · Red apple · Cocoa</span>
+        </div>
+        <div class="coffee-card">
+          <div class="coffee-img-wrap">
+            <img src="../assets/moonrise-bag-antigua.jpg" alt="Antigua, Guatemala">
+            <div class="coffee-hover-overlay">
+              <p class="coffee-hover-desc">Rich and grounding, built for espresso and cold mornings with a little milk. Grown on the slopes of the Agua volcano in Antigua, Guatemala, at elevations above 1,500 metres.</p>
+            </div>
+          </div>
+          <span class="coffee-origin">Guatemala · Medium-dark</span>
+          <span class="coffee-name">Antigua</span>
+          <span class="coffee-notes">Dark chocolate · Brown sugar · Toasted almond</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section class="how">
+    <div class="how-inner">
+      <span class="section-label">How It Works</span>
+      <h2>Simpler than it should be.</h2>
+      <div class="how-steps">
+        <div class="how-step">
+          <span class="how-step-num">01</span>
+          <h3>Subscribe</h3>
+          <p>$25 a month. One bag of 250g, freshly roasted and shipped to your door.</p>
+        </div>
+        <div class="how-step">
+          <span class="how-step-num">02</span>
+          <h3>We choose</h3>
+          <p>Every month we pick a single coffee — the one we think is worth your attention right now.</p>
+        </div>
+        <div class="how-step">
+          <span class="how-step-num">03</span>
+          <h3>You receive a letter</h3>
+          <p>Before your bag arrives, we send you its story — where it comes from, who grew it, and what to expect in the cup.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- THE LETTER -->
+  <section class="letter">
+    <div class="letter-inner">
+      <span class="section-label">The Monthly Letter</span>
+      <h2>Not just coffee. Context.</h2>
+      <p>
+        Each month, before your bag arrives, we write you a short letter about
+        the coffee inside. Where it was grown, the people who cultivated it,
+        what the harvest was like, and what you'll taste in the cup.
+        It's the part our subscribers say they look forward to most.
+      </p>
+    </div>
+  </section>
+
+  <!-- WAITLIST -->
+  <section class="waitlist" id="waitlist">
+    <div class="waitlist-inner">
+      <span class="section-label">Coming Soon</span>
+      <h2>Be first to know.</h2>
+      <span class="waitlist-price">$25 / month · 250g · Ships monthly</span>
+      <form class="waitlist-form" id="waitlistForm">
+        <input type="email" placeholder="Your email address" required id="emailInput">
+        <button type="submit">Join Waitlist</button>
+      </form>
+      <div class="waitlist-success" id="waitlistSuccess">
+        You're on the list. We'll be in touch before we launch.
+      </div>
+      <p class="privacy-note">
+        We will only use your email to notify you when we launch.
+        Read our <a href="privacy.html">privacy policy</a>.
+      </p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="logo">
+      <span class="logo-the">The</span>
+      <span class="logo-moonrise">Moonrise</span>
+      <span class="logo-co">Coffee Co.</span>
+    </div>
+    <div class="footer-links">
+      <a href="#waitlist">Join Waitlist</a>
+      <a href="faq.html">FAQ</a>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="mailto:hello@moonrisecoffee.co">Contact</a>
+    </div>
+    <p class="footer-copy">Curated with care. Delivered monthly.</p>
+  </footer>
+
+  <script>
+    document.getElementById('waitlistForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      this.style.display = 'none';
+      document.getElementById('waitlistSuccess').style.display = 'block';
+    });
+  </script>
+
+</body>
+</html>
